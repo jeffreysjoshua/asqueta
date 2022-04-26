@@ -19,8 +19,8 @@ import picture10 from "../components/assets/picture10.jpg";
 import picture11 from "../components/assets/picture11.jpeg";
 
 const listStyle = {
-  color: '#2F4F4F',
-  fontFamily: 'monaco',
+  color: 'black',
+  fontFamily: 'avantaGarde',
 }
 
 const items = [
@@ -131,8 +131,9 @@ class Residential extends Component {
     return (
       <div style={{backgroundColor:'#F5FFFA',}}>
         <br></br>
-        <h1 style={{ color: '#2F4F4F', fontFamily: 'monaco', backgroundColor:'#F5FFFA', height:'3.5rem', marginBottom:'1rem'}}>Check out our Residential Projects!</h1>
+        <h1 style={{ color: 'black', fontFamily: 'avantaGarde', backgroundColor:'#F5FFFA', height:'3.5rem', marginBottom:'1rem'}}>Check out our Residential Projects</h1>
         <h5><a style ={listStyle} href="/commercial"> Click here to view Commercial </a></h5>
+        <br></br>
       <Carousel
         activeIndex={activeIndex}
         next={this.next}

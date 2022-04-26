@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import {
   Collapse,
   Navbar,
@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import '../App.css'
 
 
   const myComponentStyle = {
@@ -18,32 +19,47 @@ import {
     lineHeight: 1,
     padding: '1.5rem',
     boxShadow: '0 4px 5px rgba(0, 0, 0, 0.5)',
+    width:'100%',
+    maxWidth:'100%',
+    display: 'flex',
+    justifyContent:'center',
+ }
+
+ const wordStyleBrand = {
+     color: 'black',
+     fontFamily: 'avantaGarde',
+     transition: '0.6s',
+     fontSize: '1.5rem',
+     fontWeight: 'bolder',
+     marginLeft:'0',
+     fontStyle: 'italic'
  }
 
  const wordStyle = {
-     color: 'black',
-     fontFamily: 'monaco',
-     transition: '0.6s',
-     fontSize: '1.3rem',
-     marginLeft:'2rem', 
-     fontWeight: 'bold'
- }
+  color: 'black',
+  fontFamily: 'avantaGarde',
+  transition: '0.6s',
+  fontSize: '1.3rem',
+  fontWeight: 'bolder',
+  marginRight:'3rem',
+}
 
  const dropStyle = {
   color: 'black',
-  fontFamily: 'monaco',
+  fontFamily: 'avantaGarde',
   transition: '0.6s',
   fontSize: '1.3rem',
 }
 
  const wordDropDownStyle = {
     color: 'black',
-    fontFamily: 'monaco',
+    fontFamily: 'avantaGarde',
     transition: '0.6s',
     fontSize: '1.1rem', 
+
 }
 
-export default class Example extends React.Component {
+class Example extends Component{
   constructor(props) {
     super(props);
 
@@ -59,13 +75,14 @@ export default class Example extends React.Component {
   }
   render() {
     return (
+      <div>
         <Navbar style={myComponentStyle}light expand="md">
-          <NavbarBrand style={wordStyle} href="/">Asqueta</NavbarBrand>
+          <NavbarBrand style={wordStyleBrand} href="/">Asqueta</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink style={wordStyle} href="/">Home</NavLink>
+                <NavLink className= 'nav-link' style={wordStyle} href="/">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink style={wordStyle} href="/aboutus">About Us</NavLink>
@@ -73,11 +90,11 @@ export default class Example extends React.Component {
               <NavItem>
                 <NavLink style={wordStyle} href="/contactus">Contact Us</NavLink>
               </NavItem>
-              <UncontrolledDropdown className= 'dropDown' style={dropStyle} nav inNavbar>
+              <UncontrolledDropdown className= 'drop-down' style={dropStyle} nav inNavbar>
                 <DropdownToggle style={wordStyle} nav caret>
                   Past Projects
                 </DropdownToggle>
-                <DropdownMenu style={{backgroundColor: '#F5FFFA', marginLeft: '3rem'}}right>
+                <DropdownMenu style={{backgroundColor: '#F5FFFA', marginLeft: '4rem'}}right>
                   <DropdownItem style={wordDropDownStyle} href="/commercial">
                     Commercial
                   </DropdownItem>
@@ -89,7 +106,8 @@ export default class Example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      
+        </div>
     );
   }
 }
+export default Example

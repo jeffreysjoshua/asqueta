@@ -50,8 +50,8 @@ const paragraphStyle = {
   borderColor: '#0bbdbd',
   padding: '1rem',
   width: '25rem',
-  color: '#2F4F4F',
-  fontFamily: 'monaco',
+  color: 'black',
+  fontFamily: 'avantaGarde',
   fontSize: '0.7rem',
   lineHeight: '0.2rem',
   marginLeft:'auto',
@@ -98,7 +98,7 @@ class ContactUs extends Component {
       </div>
       </div>
     <section style={{backgroundColor:'#F5FFFA', height: '100%'}}>
-      <h2 style={{textAlign:'center', marginBottom:'1rem', color:'#2F4F4F', fontFamily: 'monaco'}}>Send Us A General Inquiry Here!</h2>
+      <h2 style={{textAlign:'center', marginBottom:'1rem', color:'black', fontFamily: 'avantaGarde'}}>General Inquiry</h2>
       <div style={{maxWidth:'42rem', margin:'0 auto', padding:'1rem', borderRadius:'5px', boxShadow:'0 3px 10px #4682B4', position:'relative'}}>
         <div>
           <form action="https://formspree.io/f/xoqrjeyl" method="POST">

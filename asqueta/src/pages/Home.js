@@ -8,8 +8,8 @@ const paragraphStyle = {
   borderColor: '#0bbdbd',
   padding: '1rem',
   width: '25rem',
-  color: '#2F4F4F',
-  fontFamily: 'monaco',
+  color: 'black',
+  fontFamily: 'avantaGarde',
 }
 
 const listStyle = {
@@ -18,8 +18,7 @@ const listStyle = {
   borderColor: '#0bbdbd',
   padding: '0.5rem',
   width: '25rem',
-  color: '#2F4F4F',
-  fontFamily: 'monaco',
+  fontFamily: 'avantaGarde',
   marginLeft: '7rem'
 }
 
@@ -28,6 +27,7 @@ const paragraphContainerStyle = {
   justifyContent: 'center',
   backgroundColor:'#F5FFFA',
   alignItems: 'center',
+  maxWidth: '100%'
 }
 
 const imgStyle = {
@@ -49,17 +49,17 @@ class Home extends Component {
   render() {
     return (
       <>
-      <div style={{backgroundColor:'#F5FFFA', top:'15%'}}>
+      <div style={{backgroundColor:'#F5FFFA', top:'15%', maxWidth: '100%'}}>
         <br></br>
-      <h1 style={{ color: '#2F4F4F', fontFamily: 'monaco', backgroundColor:'#F5FFFA', height:'3.5rem', marginBottom:'0'}}>Welcome to Asqueta Glass!</h1>
+      <h1 style={{ color: 'black', fontFamily: 'avantaGarde', backgroundColor:'#F5FFFA', height:'3.5rem', marginBottom:'0'}}>Welcome to Asqueta Glass</h1>
         <img src={louvre} style={imgStyle}/>
       </div>
       <div style={paragraphContainerStyle}>
       <p style={paragraphStyle}>{paragraph}</p>
       <ui style ={listStyle}> 
-        <li> <a href="/commercial">Commercial </a></li>
-        <li> <a href="/residential">Residential </a></li>
-        <li> <a href="/contactus">Contact Us </a></li>
+        <li> <a style={{color: 'black'}} href="/commercial">Commercial </a></li>
+        <li> <a style={{color: 'black'}} href="/residential">Residential </a></li>
+        <li> <a style={{color: 'black'}} href="/contactus">Contact Us </a></li>
       </ui>
       </div>
       </>

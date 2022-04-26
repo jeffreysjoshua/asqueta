@@ -1,8 +1,17 @@
 *{
   text-align: center;
+  justify-content: center;
+  max-width: '100%';
   
 }
 
-/* @media only screen and (orientation: portrait) {
-   // css for portrait view
-} */
+nav a:hover {
+  border-bottom: 3px solid black;
+  color: 'white'
+}
+
+@media only screen and (orientation: portrait) {
+   .drop-down {
+     margin-right: "1rem";
+   }
+}
