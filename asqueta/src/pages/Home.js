@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import louvre from "../components/assets/louvre.jpeg";
+import '../App.css'
 
 
 const paragraphStyle = {
@@ -19,12 +20,13 @@ const listStyle = {
   padding: '0.5rem',
   width: '25rem',
   fontFamily: 'avantaGarde',
-  marginLeft: '7rem'
+  
 }
 
 const paragraphContainerStyle = {
   display: 'flex',
   justifyContent: 'center',
+  gap: '1.5rem',
   backgroundColor:'#F5FFFA',
   alignItems: 'center',
   maxWidth: '100%'
@@ -49,7 +51,7 @@ class Home extends Component {
   render() {
     return (
       <>
-      <div style={{backgroundColor:'#F5FFFA', top:'15%', maxWidth: '100%'}}>
+      <div className= "homepage" style={{backgroundColor:'#F5FFFA', top:'15%', maxWidth: '100%'}}>
         <br></br>
       <h1 style={{ color: 'black', fontFamily: 'avantaGarde', backgroundColor:'#F5FFFA', height:'3.5rem', marginBottom:'0'}}>Welcome to Asqueta Glass</h1>
         <img src={louvre} style={imgStyle}/>

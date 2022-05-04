@@ -9,14 +9,14 @@ import {
 import cpicture1 from "../components/assets/cpicture1.png";
 import cpicture2 from "../components/assets/cpicture2.jpg";
 import cpicture3 from "../components/assets/cpicture3.jpg";
-import cpicture4 from "../components/assets/cpicture4.jpg";
-import cpicture5 from "../components/assets/cpicture5.jpg";
+// import cpicture4 from "../components/assets/cpicture4.jpg";
+// import cpicture5 from "../components/assets/cpicture5.jpg";
 import cpicture6 from "../components/assets/cpicture6.jpg";
-import cpicture7 from "../components/assets/cpicture7.jpg";
+// import cpicture7 from "../components/assets/cpicture7.jpg";
 import cpicture8 from "../components/assets/cpicture8.jpg";
 import cpicture9 from "../components/assets/cpicture9.jpg";
 import cpicture10 from "../components/assets/cpicture10.jpg";
-import cpicture11 from "../components/assets/cpicture11.jpg";
+// import cpicture11 from "../components/assets/cpicture11.jpg";
 
 const listStyle = {
   color: 'black',
@@ -37,11 +37,11 @@ const items = [
     altText: 'Slide 3',
   },
   {
-    src: cpicture4,
+    src: cpicture1,
     altText: 'Slide 4',
   },
   {
-    src: cpicture5,
+    src: cpicture1,
     altText: 'Slide 5',
   },
   {
@@ -49,7 +49,7 @@ const items = [
     altText: 'Slide 6',
   },
   {
-    src: cpicture7,
+    src: cpicture1,
     altText: 'Slide 7',
   },
   {
@@ -65,7 +65,7 @@ const items = [
     altText: 'Slide 10',
   },
   {
-    src: cpicture11,
+    src: cpicture1,
     altText: 'Slide 11',
   }
 ];

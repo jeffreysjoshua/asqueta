@@ -7,16 +7,16 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import picture1 from "../components/assets/picture1.jpg";
-import picture2 from "../components/assets/picture2.jpg";
-import picture3 from "../components/assets/picture3.jpg";
-import picture4 from "../components/assets/picture4.jpg";
+// import picture2 from "../components/assets/picture2.jpg";
+// import picture3 from "../components/assets/picture3.jpg";
+// import picture4 from "../components/assets/picture4.jpg";
 import picture5 from "../components/assets/picture5.png";
-import picture6 from "../components/assets/picture6.jpeg";
+// import picture6 from "../components/assets/picture6.jpeg";
 import picture7 from "../components/assets/picture7.jpg";
 import picture8 from "../components/assets/picture8.jpg";
 import picture9 from "../components/assets/picture9.jpg";
-import picture10 from "../components/assets/picture10.jpg";
-import picture11 from "../components/assets/picture11.jpeg";
+// import picture10 from "../components/assets/picture10.jpg";
+// import picture11 from "../components/assets/picture11.jpeg";
 
 const listStyle = {
   color: 'black',
@@ -29,15 +29,15 @@ const items = [
     altText: 'Slide 1',
   },
   {
-    src: picture2,
+    src: picture1,
     altText: 'Slide 2',
   },
   {
-    src: picture3,
+    src: picture1,
     altText: 'Slide 3',
   },
   {
-    src: picture4,
+    src: picture1,
     altText: 'Slide 4',
   },
   {
@@ -45,7 +45,7 @@ const items = [
     altText: 'Slide 5',
   },
   {
-    src: picture6,
+    src: picture1,
     altText: 'Slide 6',
   },
   {
@@ -61,11 +61,11 @@ const items = [
     altText: 'Slide 9',
   },
   {
-    src: picture10,
+    src: picture1,
     altText: 'Slide 10',
   },
   {
-    src: picture11,
+    src: picture1,
     altText: 'Slide 11',
   }
 ];

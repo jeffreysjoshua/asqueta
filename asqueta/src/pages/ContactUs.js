@@ -48,7 +48,7 @@ const paragraphStyle = {
   border: '1.2rem',
   borderStyle: 'solid',
   borderColor: '#0bbdbd',
-  padding: '1rem',
+  padding: '1.5rem',
   width: '25rem',
   color: 'black',
   fontFamily: 'avantaGarde',
@@ -71,6 +71,8 @@ class ContactUs extends Component {
   render() {
     return (
       <>
+      <div style={{backgroundColor: '#F5FFFA'}}>
+      <br></br>
       <div style={paragraphContainerStyle}>
       <div style={paragraphStyle}>
       <h4 >For Commercial Inquiries Contact</h4>
@@ -147,6 +149,7 @@ class ContactUs extends Component {
         </div>
       </div>
     </section>
+    </div>
       </>
       )
   }

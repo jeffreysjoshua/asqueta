@@ -51,6 +51,17 @@ const cardStyle = {
   marginBottom:'1.2rem'
 }
 
+const imgStyle = {
+  borderRadius: '4px', 
+  height: '10rem', 
+  objectFit: 'cover', 
+  border: '0.3rem', 
+  borderStyle: 'solid', 
+  borderColor: '#0bbdbd', 
+  padding: '0.2rem'
+
+}
+
 class AboutUs extends Component {
   render() {
     return (
@@ -74,7 +85,7 @@ class AboutUs extends Component {
               </CardSubtitle>
             </CardBody>
             <img
-              style={{borderRadius: '4px', height: '10rem', objectFit: 'cover'}}
+              style={imgStyle}
               width="150px"
               height="170px"
               src={homer}
@@ -84,11 +95,8 @@ class AboutUs extends Component {
               <CardText style={{lineHeight:'1.7rem', color:'black', padding: '0.3rem 0', fontFamily: 'avantaGarde'}}>
               As the family's provider, Homer works at the Springfield Nuclear Power Plant as safety inspector. Homer embodies many American working class stereotypes: he is obese, immature, outspoken, aggressive, balding, lazy, ignorant, unprofessional, and addicted to beer, junk food and watching television.
               </CardText>
-              <CardLink href="https://www.linkedin.com/in/jeffreysjoshua/">
-                LinkedIn
-              </CardLink>
-              <CardLink href="https://github.com/jeffreysjoshua">
-                GitHub
+              <CardLink href="">
+                Email
               </CardLink>
             </CardBody>
           </Card>
@@ -100,7 +108,7 @@ class AboutUs extends Component {
               </CardSubtitle>
             </CardBody>
             <img
-              style={{borderRadius: '4px', height: '10rem', objectFit: 'cover'}}
+              style={imgStyle}
               width="150px"
               height="170px"
               src={marge}
@@ -110,10 +118,9 @@ class AboutUs extends Component {
               <CardText style={{lineHeight:'1.7rem', color:'black', padding: '0.3rem 0', fontFamily: 'avantaGarde'}}>
               Marge is the matriarch of the Simpson family. With her husband Homer, she has three children: Bart, Lisa, and Maggie. Marge is the moralistic force in her family and often provides a grounding voice in the midst of her family's antics by trying to maintain order in the Simpson household. She is often portrayed as a stereotypical television mother and is often included on lists of top "TV moms".
               </CardText>
-              <CardLink href="https://www.linkedin.com/in/robert-calpito/">
-                LinkedIn
+              <CardLink href="">
+                Email
               </CardLink>
-              <CardLink href="https://github.com/rccalpito">GitHub</CardLink>
             </CardBody>
           </Card>
         </CardGroup>
@@ -126,7 +133,7 @@ class AboutUs extends Component {
               </CardSubtitle>
             </CardBody>
             <img
-              style={{borderRadius: '4px', height: '10rem', objectFit: 'cover'}}
+              style={imgStyle}
               width="150px"
               height="170px"
               src={lisa}
@@ -136,10 +143,9 @@ class AboutUs extends Component {
               <CardText style={{lineHeight:'1.7rem', color:'black', padding: '0.3rem 0', fontFamily: 'avantaGarde'}}>
               Intelligent, kind and passionate about the planet and all living things, Lisa Simpson, at eight years old, is the second child of Homer and Marge, the younger sister of Bart, and the older sister of Maggie. Lisa's high intellect and left-wing political stance creates a barrier between her and other children her age; therefore she is a bit of a loner and social outcast.
               </CardText>
-              <CardLink href="https://www.linkedin.com/in/john-budd-60a7a822b/">
-                LinkedIn
+              <CardLink href="">
+                Email
               </CardLink>
-              <CardLink href="https://github.com/Jbudd512">GitHub</CardLink>
             </CardBody>
           </Card>
           <Card style={cardStyle}>
@@ -150,7 +156,7 @@ class AboutUs extends Component {
               </CardSubtitle>
             </CardBody>
             <img
-              style={{borderRadius: '4px', height: '10rem', objectFit: 'cover'}}
+              style={imgStyle}
               width="150px"
               height="170px"
               src={bart}
@@ -160,10 +166,9 @@ class AboutUs extends Component {
               <CardText style={{lineHeight:'1.7rem', color:'black', padding: '0.3rem 0', fontFamily: 'avantaGarde'}}>
               At ten years old, Bart is the eldest child and only son of Homer and Marge, and the brother of Lisa and Maggie. Bart's most prominent and popular character traits are his mischievousness, rebelliousness and disrespect for authority.
               </CardText>
-              <CardLink href="https://www.linkedin.com/in/francisco-carbonero/">
-                LinkedIn
+              <CardLink href="">
+                Email
               </CardLink>
-              <CardLink href="https://github.com/Neuroblock">GitHub</CardLink>
             </CardBody>
           </Card>
         </CardGroup>

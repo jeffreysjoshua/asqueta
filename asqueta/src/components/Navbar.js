@@ -23,6 +23,7 @@ import {
     maxWidth:'100%',
     display: 'flex',
     justifyContent:'center',
+
  }
 
  const wordStyleBrand = {
@@ -31,7 +32,7 @@ import {
      transition: '0.6s',
      fontSize: '1.5rem',
      fontWeight: 'bolder',
-     marginLeft:'0',
+     marginLeft:'1.3rem',
      fontStyle: 'italic'
  }
 
@@ -41,7 +42,8 @@ import {
   transition: '0.6s',
   fontSize: '1.3rem',
   fontWeight: 'bolder',
-  marginRight:'3rem',
+  marginLeft: '1.3rem',
+  marginRight: '1.3rem'
 }
 
  const dropStyle = {
@@ -94,7 +96,7 @@ class Example extends Component{
                 <DropdownToggle style={wordStyle} nav caret>
                   Past Projects
                 </DropdownToggle>
-                <DropdownMenu style={{backgroundColor: '#F5FFFA', marginLeft: '4rem'}}right>
+                <DropdownMenu style={{backgroundColor: '#F5FFFA'}}right>
                   <DropdownItem style={wordDropDownStyle} href="/commercial">
                     Commercial
                   </DropdownItem>
