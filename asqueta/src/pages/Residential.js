@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import picture1 from "../components/assets/picture1.jpg";
+// import picture1 from "../components/assets/picture1.jpg";
 // import picture2 from "../components/assets/picture2.jpg";
 // import picture3 from "../components/assets/picture3.jpg";
 // import picture4 from "../components/assets/picture4.jpg";
@@ -25,27 +25,27 @@ const listStyle = {
 
 const items = [
   {
-    src: picture1,
+    src: picture5,
     altText: 'Slide 1',
   },
   {
-    src: picture1,
+    src: picture5,
     altText: 'Slide 2',
   },
   {
-    src: picture1,
+    src: picture5,
     altText: 'Slide 3',
   },
   {
-    src: picture1,
+    src: picture7,
     altText: 'Slide 4',
   },
   {
-    src: picture5,
+    src: picture7,
     altText: 'Slide 5',
   },
   {
-    src: picture1,
+    src: picture8,
     altText: 'Slide 6',
   },
   {
@@ -61,11 +61,11 @@ const items = [
     altText: 'Slide 9',
   },
   {
-    src: picture1,
+    src: picture7,
     altText: 'Slide 10',
   },
   {
-    src: picture1,
+    src: picture5,
     altText: 'Slide 11',
   }
 ];
