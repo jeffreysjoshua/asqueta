@@ -40,9 +40,9 @@ const imgStyle = {
   marginTop: '0.5rem',
   marginBottom: '0.5rem',
   maxWidth: "100%",
-  maxHeight: "40rem", 
+  maxHeight: "30rem", 
   height: '40rem', 
-  width: '50rem', 
+  width: '40rem', 
   marginBottom: '1.5rem'
 }
 

@@ -45,8 +45,13 @@ import {
   transition: '0.6s',
   fontSize: '1.3rem',
   fontWeight: 'bolder',
-  gap: '15rem',
-
+}
+const wordStyleD = {
+  color: 'black',
+  fontFamily: 'avantaGarde',
+  transition: '0.6s',
+  fontSize: '1.3rem',
+  fontWeight: 'bolder',
 }
 
  const dropStyle = {
@@ -54,6 +59,7 @@ import {
   fontFamily: 'avantaGarde',
   transition: '0.6s',
   fontSize: '1.3rem',
+  listStyleType: 'none'
 }
 
  const wordDropDownStyle = {
@@ -115,9 +121,8 @@ class Example extends Component{
                 <NavLink style={wordStyle} href="/contactus">Contact Us</NavLink>
               </NavItem>
               </Nav>
-              
               <UncontrolledDropdown className= 'drop-down' style={dropStyle} nav inNavbar>
-                <DropdownToggle style={wordStyle} nav caret>
+                <DropdownToggle style={wordStyleD} nav caret>
                   Past Projects
                 </DropdownToggle>
                 <DropdownMenu style={{backgroundColor: '#F5FFFA'}}right>
@@ -129,7 +134,6 @@ class Example extends Component{
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              
           </Collapse>
         </Navbar>
         </div>

@@ -48,7 +48,7 @@ const cardStyle = {
   justifyContent: 'center',
   flexDirection: 'column',
   alignItems: 'center',
-  margin: '1.5rem',
+  margin: '1rem',
   backgroundColor: '#F5FFFA',
   width:'30rem',
   height: '30rem',
