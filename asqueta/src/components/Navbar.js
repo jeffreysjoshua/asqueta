@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
   import '../App.css'
+  import newlogo from "../components/assets/newlogo.png";
 
 
   const myComponentStyle = {
@@ -23,11 +24,13 @@ import {
     maxWidth:'100%',
     display: 'flex',
     justifyContent:'center',
+    margin: 'auto'
 
  }
 
  const wordStyleBrand = {
      color: 'black',
+     display: 'flex',
      fontFamily: 'avantaGarde',
      transition: '0.6s',
      fontSize: '1.5rem',
@@ -42,8 +45,8 @@ import {
   transition: '0.6s',
   fontSize: '1.3rem',
   fontWeight: 'bolder',
-  marginLeft: '1.3rem',
-  marginRight: '1.3rem'
+  gap: '15rem',
+
 }
 
  const dropStyle = {
@@ -58,7 +61,26 @@ import {
     fontFamily: 'avantaGarde',
     transition: '0.6s',
     fontSize: '1.1rem', 
+}
 
+const attempt = {
+  width: '100%',
+  justifyContent: 'spaceBetween'
+}
+
+const logoStyle = {
+  border: '0.2rem',
+  borderStyle: 'solid',
+  borderColor: 'black',
+  width: '11rem',
+  padding: '0.625rem',
+  color: '#2F4F4F',
+  marginTop: '0.5rem',
+  marginBottom: '0.5rem',
+}
+
+const divStyle = {
+  
 }
 
 class Example extends Component{
@@ -79,10 +101,10 @@ class Example extends Component{
     return (
       <div>
         <Navbar style={myComponentStyle}light expand="md">
-          <NavbarBrand style={wordStyleBrand} href="/">Asqueta</NavbarBrand>
+          <img src={newlogo} href="/" style={logoStyle} Asqueta />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav style={attempt} navbar>
               <NavItem>
                 <NavLink className= 'nav-link' style={wordStyle} href="/">Home</NavLink>
               </NavItem>
@@ -92,6 +114,8 @@ class Example extends Component{
               <NavItem>
                 <NavLink style={wordStyle} href="/contactus">Contact Us</NavLink>
               </NavItem>
+              </Nav>
+              
               <UncontrolledDropdown className= 'drop-down' style={dropStyle} nav inNavbar>
                 <DropdownToggle style={wordStyle} nav caret>
                   Past Projects
@@ -105,7 +129,7 @@ class Example extends Component{
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-            </Nav>
+              
           </Collapse>
         </Navbar>
         </div>

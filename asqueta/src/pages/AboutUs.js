@@ -34,20 +34,25 @@ const paragraphStyle = {
   maxWidth:'100%'
 }
 
+const cardContainer = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+}
+
 const cardStyle = {
   padding: '0.625rem',
   borderRadius: '6px',
   boxShadow: '0px 1px 15px 1px #0bbdbd',
   display: 'flex',
+  justifyContent: 'center',
   flexDirection: 'column',
-  justifyItems: 'center',
   alignItems: 'center',
   margin: '1.5rem',
   backgroundColor: '#F5FFFA',
   width:'30rem',
   height: '30rem',
-  maxWidth: '35rem',
-  maxHeight: '40rem',
+  maxWidth: '100%',
   marginBottom:'1.2rem'
 }
 
@@ -76,7 +81,7 @@ class AboutUs extends Component {
           </p>
         </div>
         <br></br>
-        <CardGroup>
+        <CardGroup style={cardContainer}>
           <Card style={cardStyle}>
             <CardBody>
               <CardTitle style={{marginBottom:'0.5rem', color:'black', fontFamily: 'avantaGarde'}}>Homer Simpson</CardTitle>
@@ -124,7 +129,7 @@ class AboutUs extends Component {
             </CardBody>
           </Card>
         </CardGroup>
-        <CardGroup>
+        <CardGroup style={cardContainer}>
           <Card style={cardStyle}>
             <CardBody>
               <CardTitle style={{marginBottom:'0.5rem', color:'black', fontFamily: 'avantaGarde'}}>Lisa Simpson</CardTitle>
